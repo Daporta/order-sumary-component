@@ -1,0 +1,123 @@
+:root {
+    --paleBlue:hsl(225, 100%, 94%);
+    --brightBlue:hsl(245, 75%, 52%);
+    --veryPaleBlue:hsl(225, 100%, 98%);
+    --desaturatedBlue:hsl(224, 23%, 55%);
+    --darkBlue:hsl(223, 47%, 23%);
+    --font:'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url('../../images/pattern-background-desktop.svg');
+    background-color: var(--paleBlue);
+    background-repeat: repeat-x;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--font);
+}
+
+.card {
+    margin: auto;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.woman-image {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.order-summary {
+    text-align: center;
+}
+
+.order-summary h1 {
+    font-size: 28px;
+    color: var(--darkBlue);
+    font-weight: 900; 
+}
+
+.order-summary p {
+    font-size: 16px;
+    color: var(--desaturatedBlue);
+    line-height: 25px;
+}
+
+.order-resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--veryPaleBlue);
+    margin: auto;
+    padding: 5px 0 5px 0;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.order-resume p {
+    margin-left: -40px;
+    line-height: 30px;
+}
+
+.order-resume span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--darkBlue);
+}
+
+.order-resume button {
+    background: none;
+    color: #5c4dca;
+    border: none;
+    text-decoration: underline solid 2px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.order-resume button:hover {
+    color: var(--desaturatedBlue);
+    text-decoration: none;
+}
+
+.anchors {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0 50px 0;
+    text-align: center;
+}
+
+.proceed-anchor {
+    background-color: var(--brightBlue);
+    color: var(--paleBlue);
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    display: block;
+    margin-bottom: 30px;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.proceed-anchor:hover {
+    background-color: #766CF1;
+}
+
+.cancel-anchor {
+    background-color: #fff;
+    border: none;
+    font-size: 15px;
+    color: var(--desaturatedBlue);
+    font-weight: 900;
+}
+
+.cancel-anchor:hover {
+    color: var(--darkBlue);
+}
